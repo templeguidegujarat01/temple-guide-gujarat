@@ -37,9 +37,9 @@ padding:20px;
 
 .card{
 background:white;
-padding:20px;
-margin-bottom:20px;
 border-radius:10px;
+margin-bottom:20px;
+overflow:hidden;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 transition:0.3s;
 }
@@ -48,15 +48,25 @@ transition:0.3s;
 transform:scale(1.02);
 }
 
-h2.section-title{
-text-align:center;
-margin:20px 0;
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-content{
+padding:15px;
 }
 
 a{
 text-decoration:none;
 color:#0d47a1;
 font-weight:bold;
+}
+
+.hero-text{
+margin-top:15px;
+font-size:16px;
 }
 </style>
 
@@ -74,26 +84,32 @@ font-weight:bold;
 <a href="dwarka.html">Dwarka</a>
 </nav>
 
-<div style="margin-top:15px; font-size:16px;">
-Discover famous temples of Gujarat with timings, maps, travel guide and tips.
+<div class="hero-text">
+Discover famous temples of Gujarat with timings, maps, travel guides and tips.
 </div>
 
 </header>
 
 <div class="container">
 
-<h2 class="section-title">Popular Temples</h2>
+<h2 style="text-align:center; margin:20px 0;">Popular Temples</h2>
 
 <div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Somnath_Temple.jpg">
+<div class="card-content">
 <h2>🛕 Somnath Temple</h2>
 <p>One of the 12 Jyotirlingas of Lord Shiva.</p>
 <a href="somnath.html">View Guide →</a>
 </div>
+</div>
 
 <div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Dwarkadheesh_temple.jpg">
+<div class="card-content">
 <h2>🛕 Dwarkadhish Temple</h2>
 <p>Sacred temple of Lord Krishna in Dwarka.</p>
 <a href="dwarka.html">View Guide →</a>
+</div>
 </div>
 
 </div>
